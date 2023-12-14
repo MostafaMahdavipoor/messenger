@@ -1,0 +1,136 @@
+* {
+  box-sizing: inherit;
+}
+body {
+  font-family: "../fonts/iransans.ttf", serif;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+#main {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: grid;
+  grid-template-areas:
+    "aside header header"
+    "aside body body"
+    "aside body body"
+    "aside body body"
+    "aside body body"
+    "aside footer footer";
+  grid-gap: 16px;
+  width: 1000px;
+  height: 600px;
+  /*background-color: aqua;*/
+}
+
+/*===== header staring from here */
+
+#header {
+  grid-area: header;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: lightgreen;
+
+  display: flex;
+  align-items: center;
+}
+
+#contactButton {
+  background-color: transparent;
+  font-size: 25px;
+  border: 0;
+}
+#ahmadKarimi {
+  flex: 1 0 auto;
+}
+#pencil {
+  font-size: 25px;
+}
+#refreshHeader {
+  font-size: 25px;
+}
+
+/*===== header ending here */
+/*===== aside staring from here */
+
+#aside {
+  grid-area: aside;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: lightgreen;
+}
+#asideUpperContainer {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+}
+#farawinMessenger {
+  margin: 10px;
+  flex: 1 0 auto;
+}
+#adding {
+  font-size: 25px;
+  margin: 10px;
+}
+#refreshAside {
+  font-size: 25px;
+  margin: 10px;
+}
+
+#asideLowerContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.itemsLowerAside {
+  flex: 1 0 auto;
+  font-size: 25px;
+}
+[id^="profile"] {
+  background-color: transparent;
+  font-size: 25px;
+  border: 0;
+}
+/*===== aside ending here */
+
+#body {
+  grid-area: body;
+  min-height: 300px;
+  min-width: 340px;
+  /*background-color: bisque;*/
+}
+
+/*===== footer staring from here */
+
+#footer {
+  grid-area: footer;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: lightgreen;
+}
+#message {
+  background-color: transparent;
+  border: 0;
+  transform: translate(-2%, 70%);
+  font-size: 20px;
+  width: 88%;
+}
+#message:focus {
+  outline: none;
+}
+#sendButton {
+  background-color: transparent;
+  transform: translate(-40%, 70%);
+  font-size: 20px;
+  border: 0;
+}
+#emojiButton{
+  background-color: transparent;
+  transform: translate(-1470%, -30%);
+  font-size: 20px;
+  border: 0;
+}
+
+/*===== footer ending here */

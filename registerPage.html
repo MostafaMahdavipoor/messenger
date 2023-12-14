@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styling/registerPage.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form1">
+      <div>
+        <label for="mobileNumber">موبایل:</label>
+      </div>
+      <div>
+        <input
+          type="tel"
+          maxlength="11"
+          pattern="[0-9]{11}"
+          required
+          id="mobileNumber"
+          class="fields"
+        />
+      </div>
+
+      <div>
+        <label for="pass">رمز عبور:</label>
+      </div>
+      <div>
+        <input
+          type="password"
+          id="pass"
+          class="fields"
+          minlength="8"
+          required
+        />
+        <p id="wrongPass"></p>
+      </div>
+
+      <div>
+        <label for="passRepeat">تکرار رمز عبور:</label>
+      </div>
+      <div>
+        <input
+          type="password"
+          id="passRepeat"
+          class="fields"
+          minlength="8"
+          required
+        />
+        <p id="nomatchPass"></p>
+      </div>
+
+      <div id="divButton">
+        <a href="index.html"
+          ><input type="button" value="ثبت نام" id="button" disabled
+        /></a>
+      </div>
+
+      <div id="divReg">
+        <a href="loginPage.html" id="reg">ورود</a>
+      </div>
+    </form>
+    <script src="scripts/registerPage.js"></script>
+  </body>
+</html>
